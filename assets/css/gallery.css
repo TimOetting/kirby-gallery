@@ -1,0 +1,145 @@
+.galleryField__item--selected .galleryField__itemBtn,
+.galleryField__item--selected .galleryField__itemCaption{
+  background: #8dae28;
+  color: white;
+}
+.galleryField__item--selected .galleryField__itemCaption{
+  border-bottom-color: #8dae28;
+}
+.galleryField__item:hover .galleryField__itemBtn--single{
+  color: #BBB;
+}
+.galleryField__item--selected:hover .galleryField__itemBtn--single{
+  color: white;
+}
+.galleryField__items{
+  background-color: #DDD;
+  padding: 10px 0 10px 10px;
+}
+.galleryField__empty{
+  margin: 15px
+}
+.galleryField__items--select .galleryField__itemCaption{
+  pointer-events: none;
+}
+.galleryField__imgContainer{
+  width: 100%;
+  padding-top: 100%;
+  position: relative;
+  background: #cacaca;
+  background: #fff;
+  position: relative;
+  overflow: hidden;
+}
+.galleryField__control{
+  clear: both;
+  text-align: right;
+  padding-right: 10px;
+}
+.galleryField__img{
+  max-width:100%;
+  max-height:100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 0 1px #e4e4e4;
+}
+.galleryField__item{
+  position: relative;
+  width: calc(50% - 10.1px);
+  float: left;
+  margin: 0 10px 10px 0;
+}
+.field-grid-item-1-2 .galleryField__item{
+  width: calc(50% - 10.1px);
+}
+@media screen and (min-width: 960px) {
+  .galleryField__item{
+    width: calc(33.33% - 10.1px);
+  }
+  .field-grid-item-1-2 .galleryField__item{
+    width: calc(100% - 10.1px);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .galleryField__item{
+    width: calc(25% - 10.1px);
+  }
+  .field-grid-item-1-2 .galleryField__item{
+    width: calc(50% - 10.1px);
+  }
+}
+@media screen and (min-width: 1680px) {
+  .galleryField__item{
+    width: calc(20% - 10.1px);
+  }
+  .field-grid-item-1-2 .galleryField__item{
+    width: calc(33.33% - 10.1px);
+  }
+}
+@media screen and (min-width: 1920px) {
+  .galleryField__item{
+    width: calc(16.664% - 10.1px);
+  }
+  .field-grid-item-1-2 .galleryField__item{
+    width: calc(33.33% - 10.1px);
+  }
+}
+@media screen and (min-width: 2300px) {
+  .galleryField__item{
+    width: calc(16.664% - 20.1px);
+    margin: 0 20px 20px 0;
+  }
+  .field-grid-item-1-2 .galleryField__item{
+    width: calc(33.33% - 20.1px);
+  }
+  .galleryField__control{
+    padding-right: 20px;
+  }
+  .galleryField__items{
+    padding: 20px 0 20px 20px;
+  }
+}
+.galleryField__item:hover{
+  box-shadow: 0 0 0 2px #ddd;
+}
+.galleryField__item--selected{
+  box-shadow: 0 0 0 2px #8dae28;
+}
+.galleryField__item--selected:hover{
+  box-shadow: 0 0 0 2px #8dae28;
+}
+.galleryField__itemCaption{
+  padding: .5em 1.5em;
+  line-height: 1.5em;
+}
+.galleryField__itemControl{
+  overflow: auto;
+}
+.galleryField__itemBtn{
+  padding: .5em .2em;
+  line-height: 1.5em;
+  text-align: center;
+  width: 50%;
+  float: left;
+  text-align: center;
+  border-top: 1px solid #ddd;
+}
+.galleryField__itemBtn:first-child{
+  border-right: 1px solid #ddd;
+}
+.galleryField__itemBtn--single{
+  width: 100%;
+  color: #DDD;
+  cursor: auto;
+}
+.galleryField__itemBtn--single:first-child{
+  border-right: none;
+}
+.galleryField__items--sort .galleryField__itemCaption,
+.galleryField__items--sort .galleryField__imgContainer{
+  cursor: move;
+}
