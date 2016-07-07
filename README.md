@@ -67,4 +67,4 @@ You can hide the filename under the thumbnail by adding the option ``displayFile
 ![Aspect Ratio](https://raw.githubusercontent.com/TimOetting/documentation-images/master/kirby-gallery/no_filenames.jpg)
 
 ### Setup
-Using git, go to the root folder of your Kirby project and run ``git clone https://github.com/TimOetting/kirby-list-field.git site/fields/gallery``. You can also just copy the content of this repository into ``site/fields/gallery``.
+Using git, go to the root folder of your Kirby project and run ``git clone https://github.com/TimOetting/kirby-gallery.git site/fields/gallery``. You can also just copy the content of this repository into ``site/fields/gallery``.
