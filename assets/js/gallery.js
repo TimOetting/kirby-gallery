@@ -4,7 +4,7 @@
   var Gallery = function(el) {
     var element   = $(el)
     var api       = element.data('api');
-    var mainForm  = $('form.form-blueprint-project')
+    var mainForm  = element.closest('form.form');
     var keepUrl   = mainForm.data('keep')
     var offsetFix = true;
 
