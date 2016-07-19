@@ -62,7 +62,7 @@ You can hide the filename under the thumbnail by adding the option ``displayFile
       pictures:
         label: Gallery
         type: gallery
-        displayFilename; false
+        displayFilename: false
 
 ![Aspect Ratio](https://raw.githubusercontent.com/TimOetting/documentation-images/master/kirby-gallery/no_filenames.jpg)
 
