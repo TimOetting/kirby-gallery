@@ -33,7 +33,7 @@
       }).toArray()
       oldSelected.forEach(function(item, index){
         if ($.inArray(item, newSelected) == -1){
-          $('.galleryField__items--sort [data-image-name="'+item+'"]').remove();
+          element.find('.galleryField__items--sort [data-image-name="'+item+'"]').remove();
         }
       })
       newSelected.forEach(function(item, index){
@@ -56,7 +56,7 @@
         if(offsetFix){
           ui.item.css('margin-top', -$('.mainbar').scrollTop() );
         }
-        $('.galleryField__sort .galleryField__item').height(Math.round($('.galleryField__sort .galleryField__item').height()))
+        element.find('.galleryField__sort .galleryField__item').height(Math.round($('.galleryField__sort .galleryField__item').height()))
       },
       change: function(e, ui){
         if(offsetFix){
@@ -70,7 +70,7 @@
           offsetFix = false;
           ui.item.css('margin-top', 0);
         }
-        $('.galleryField__sort .galleryField__item').height('')
+        element.find('.galleryField__sort .galleryField__item').height('')
       },
       update: function(){
         keepState(app.content.reload);

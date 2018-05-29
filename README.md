@@ -29,6 +29,35 @@ The content will be YAML-structured. Inside the template, the field therefore ha
     - mountains.jpg
     - road.jpg
     - forrest.jpg
+    
+## Download and Installation 
+
+### Requirements
+
+- PHP 5.4.0+
+- Kirby 2.3.0+
+
+### Using [Kirby CLI](https://github.com/getkirby/cli)
+If you’re using the [Kirby CLI](https://github.com/getkirby/cli), you need to cd to the root directory of your Kirby installation and run the following command:
+
+```
+kirby plugin:install TimOetting/kirby-gallery
+```
+This will download and copy the Gallery Fieldtype.
+
+### Using Git Submodule
+
+To install this plugin as a git submodule, execute the following command from the root of your kirby project:
+
+```
+git submodule add https://github.com/TimOetting/kirby-gallery.git site/fields/gallery
+```
+
+### Using Copy and Paste
+
+Download the contents of this repository as ZIP-file.
+Rename the extracted folder to `gallery` and copy it into the site/fields/ directory in your Kirby project.
+
 
 ## Options
 
@@ -66,5 +95,3 @@ You can hide the filename under the thumbnail by adding the option ``displayFile
 
 ![Aspect Ratio](https://raw.githubusercontent.com/TimOetting/documentation-images/master/kirby-gallery/no_filenames.jpg)
 
-### Setup
-Using git, go to the root folder of your Kirby project and run ``git clone https://github.com/TimOetting/kirby-gallery.git site/fields/gallery``. You can also just copy the content of this repository into ``site/fields/gallery``.
