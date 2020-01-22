@@ -2,7 +2,7 @@
 
 (function($) {
   var Gallery = function(el) {
-    var element   = $(el)
+    var element   = $(el);
     var api       = element.data('api');
     var mainForm  = element.closest('form.form');
     var keepUrl   = mainForm.data('keep');
@@ -11,7 +11,7 @@
     element.on('click', '.galleryField__removeBtn', function(e){
       $(this).closest('.galleryField__item').remove();
       keepState(app.content.reload);
-    })
+    });
 
     element.on('click', '.galleryField__addBtn', function(e){
       e.preventDefault()
@@ -19,7 +19,7 @@
       $('.galleryField__items--select', element).html(selectListContent);
       $('.galleryField__items--select', element).removeClass('hidden');
       $('.galleryField__items--sort', element).addClass('hidden');
-    })
+    });
 
     element.on('click', '.galleryField__saveSelectionBtn', function(e){
       e.preventDefault();
@@ -45,11 +45,11 @@
         }
       })
       keepState(app.content.reload);
-    })
+    });
 
     element.on('click', '.galleryField__items--select .galleryField__item', function(e){
       $(this).toggleClass('galleryField__item--selected')
-    })
+    });
 
     element.find('.galleryField__sort').sortable({
       start: function(e, ui){
@@ -86,7 +86,7 @@
           var fieldID = mainForm.closest('.builder-entry').find('.builder-entry-quickform-container').data('quickform-container');
           var data = mainForm.serialize().split(fieldID + '-').join('');
           var url = mainForm.attr('action');
-          var urlParamSeparator = (url.indexOf('?') > -1) ? '&' : '?'
+          var urlParamSeparator = (url.indexOf('?') > -1) ? '&' : '?';
 
           $.ajax({
             type: "POST",
@@ -102,7 +102,7 @@
           callback();
         });
       }
-    }
+    };
 
     var showSelectList = function(e){
 
